@@ -63,14 +63,17 @@ const change = (N, C, K, L) => {
 
 const triangle = (height) => {
     // your code here
+    let res = ""
     for (let i = 1; i <= height; i++) {
         let str = ""
         for (let j = 1; j <= i; j ++) {
             str += "#"
         }
-        console.log(str)
+        res += str + "\n"
+        // console.log(str)
     }
-    console.log()
+    return res
+    // console.log()
 }
 
 const fizzbuzz = (N) => {
