@@ -7,8 +7,7 @@ const nullVar = null
 
 const square = (n) => {
     // your code here
-    number = n * n
-    return number
+    return n*n
 }
 
 const hello = (name) => {
@@ -23,7 +22,7 @@ const concat = (strings) => {
 
 const getType = (value) => {
     // your code here
-    typeof value
+    typeof(value)
 }
 
 const max = (a, b) => {
