@@ -7,7 +7,8 @@ const nullVar = null
 
 const square = (n) => {
     // your code here
-    return n * n
+    number = n * n
+    return number
 }
 
 const hello = (name) => {
