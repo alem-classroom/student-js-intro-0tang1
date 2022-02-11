@@ -80,10 +80,10 @@ const fizzbuzz = (N) => {
     // your code here
     let arr = []
     for (let i = 1; i < N; i++) {
-        if (i % 5 === 0 && i % 3 !== 0) {
+        if (i % 5 == 0 && i % 3 != 0) {
             arr.push("Buzz")
         }
-        else if (i % 3 === 0) {
+        else if (i % 3 == 0) {
             arr.push("Fizz")
         } else {
             arr.push(i)
