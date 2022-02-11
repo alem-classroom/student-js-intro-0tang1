@@ -12,7 +12,7 @@ const square = (n) => {
 
 const hello = (name) => {
     // your code here
-    return "Hello, " + name + "!"
+    return "Hello, ${name}!"
 }
 
 const concat = (strings) => {
@@ -53,7 +53,7 @@ const max3 = (a, b, c) => {
 
 const change = (N, C, K, L) => {
     // your code here
-    R = (K * 100 + L) - (N * 100 + C)
+    let R = ((K * 100 + L) - (N * 100 + C)) / 100
     if (R >= 0) {
         return "$" + R
     } else {
@@ -80,10 +80,10 @@ const fizzbuzz = (N) => {
     // your code here
     let arr = []
     for (let i = 1; i < N; i++) {
-        if (i % 5 == 0 && i % 3 != 0) {
+        if (i % 5 === 0 && i % 3 !== 0) {
             arr.push("Buzz")
         }
-        else if (i % 3 == 0) {
+        else if (i % 3 === 0) {
             arr.push("Fizz")
         } else {
             arr.push(i)
@@ -97,7 +97,7 @@ const countChar = (str, char) => {
     let c = 0
     for (let i = 0; i < str.length; i++) {
         if (char == null) {
-            if (str[i] === 'c') {
+            if (str[i] === 'C') {
                 c++
             }
         }
