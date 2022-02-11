@@ -96,6 +96,11 @@ const countChar = (str, char) => {
     // your code here
     let c = 0
     for (let i = 0; i < str.length; i++) {
+        if (char == null) {
+            if (str[i] === 'c') {
+                c++
+            }
+        }
         if (str[i] === char) {
             c++
         }
