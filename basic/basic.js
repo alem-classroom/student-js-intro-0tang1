@@ -2,7 +2,7 @@ const number = 12
 const float = 3.14
 const str = "Code"
 const bool = true
-const undef = x
+const undef = undefined
 const nullVar = null
 
 const square = (n) => {
