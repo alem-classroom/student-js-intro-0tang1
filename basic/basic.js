@@ -1,13 +1,13 @@
-const number = null
-const float = null
-const str = null
-const bool = null
-const undef = null
+const number = 12
+const float = 3.14
+const str = "Code"
+const bool = true
+const undef = x
 const nullVar = null
 
 const square = (n) => {
     // your code here
-    return n*n
+    return n * n
 }
 
 const hello = (name) => {
@@ -22,12 +22,12 @@ const concat = (strings) => {
 
 const getType = (value) => {
     // your code here
-    typeof(value)
+    typeof (value)
 }
 
 const max = (a, b) => {
     // your code here
-    if (a > b ) {
+    if (a > b) {
         return a
     } else {
         return b
@@ -66,7 +66,7 @@ const triangle = (height) => {
     let res = ""
     for (let i = 1; i <= height; i++) {
         let str = ""
-        for (let j = 1; j <= i; j ++) {
+        for (let j = 1; j <= i; j++) {
             str += "#"
         }
         res += str + "\n"
@@ -82,8 +82,7 @@ const fizzbuzz = (N) => {
     for (let i = 1; i < N; i++) {
         if (i % 5 === 0 && i % 3 !== 0) {
             arr.push("Buzz")
-        }
-        else if (i % 3 === 0) {
+        } else if (i % 3 === 0) {
             arr.push("Fizz")
         } else {
             arr.push(i)
@@ -110,7 +109,12 @@ const countChar = (str, char) => {
 
 // 🚫 don't edit this export
 module.exports = {
-    number, float, str, bool, undef, nullVar,
+    number,
+    float,
+    str,
+    bool,
+    undef,
+    nullVar,
     square,
     hello,
     concat,
