@@ -6,7 +6,7 @@ const undef = undefined
 const nullVar = null
 
 const square = (n) => {
-    // your code here
+    // your code here!
     return n * n
 }
 
