@@ -26,7 +26,7 @@ const concat = (strings) => {
 
 const getType = (value) => {
     // your code here
-    typeof (value)
+    return typeof (value)
 }
 
 const max = (a, b) => {
