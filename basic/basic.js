@@ -11,7 +11,7 @@ const square = (n) => {
 }
 
 const hello = (name) => {
-    const res = `Hello, ${name}`;
+    const res = `Hello, ${name}!`;
     return res;
 }
 
