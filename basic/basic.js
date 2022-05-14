@@ -12,7 +12,7 @@ const square = (n) => {
 
 const hello = (name) => {
     // your code here
-    if (name == 'world') {
+    if (name == 'World') {
         return `Hello ${name}!`
     }
     return `Hello, ${name}!`
