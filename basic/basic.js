@@ -88,8 +88,8 @@ const fizzbuzz = (N) => {
     // your code here
     let arr = []
     for (let i = 1; i <= N; i++) {
-        if (i % 3 === 0) arr.push("Fizz")
-        else if (i % 5 === 0) arr.push("Buzz")
+        if (i % 3 === 0) arr[i - 1] = "Fizz"
+        else if (i % 5 === 0) arr[i - 1] = "Buzz"
         else arr.push(i.toString())
     }
     return arr
