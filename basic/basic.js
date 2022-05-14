@@ -31,38 +31,44 @@ const getType = (value) => {
 
 const max = (a, b) => {
     // your code here
+    let m
     if (a > b) {
-        return a
+        m = a
     } else {
-        return b
+        m = b
     }
+    return m
 }
 
 const max3 = (a, b, c) => {
     // your code here
+    let m2
     if (a >= b) {
         if (a >= c) {
-            return a
+            m2 = a
         } else {
-            return c
+            m2 = c
         }
     } else {
         if (b >= c) {
-            return b
+            m2 = b
         } else {
-            return c
+            m2 = c
         }
     }
+    return m2
 }
 
 const change = (N, C, K, L) => {
     // your code here
+    let res
     let R = ((K * 100 + L) - (N * 100 + C)) / 100
     if (R >= 0) {
-        return "$" + R
+        res = "$" + R
     } else {
-        return "not enough"
+        res = "not enough"
     }
+    return res
 }
 
 const triangle = (height) => {
@@ -74,23 +80,17 @@ const triangle = (height) => {
             str += "#"
         }
         res += str + "\n"
-        // console.log(str)
     }
     return res
-    // console.log()
 }
 
 const fizzbuzz = (N) => {
     // your code here
     let arr = []
     for (let i = 1; i <= N; i++) {
-        if (i % 5 === 0 && i % 3 !== 0) {
-            arr.push("Buzz")
-        } else if (i % 3 === 0) {
-            arr.push("Fizz")
-        } else {
-            arr.push(i)
-        }
+        if (i % 3 === 0) arr.push("Fizz")
+        else if (i % 5 === 0) arr.push("Buzz")
+        else arr.push(i)
     }
     return arr
 }
