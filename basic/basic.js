@@ -92,7 +92,7 @@ const fizzbuzz = (N) => {
         else if (i % 5 === 0) arr[i - 1] = "Buzz"
         else arr.push(i.toString())
     }
-    return arr
+    return arr.values()
 }
 
 const countChar = (str, char) => {
