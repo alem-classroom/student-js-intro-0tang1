@@ -11,13 +11,17 @@ const square = (n) => {
 }
 
 const hello = (name) => {
-    const res = `Hello, ${name}!`;
-    return res;
+    // your code here!
+    return `Hello, ${name}!`
 }
 
 const concat = (strings) => {
     // your code here
-    return strings.join()
+    let str = ''
+    strings.forEach(s => {
+        str += s
+    });
+    return str
 }
 
 const getType = (value) => {
